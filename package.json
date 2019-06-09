@@ -1,0 +1,42 @@
+{
+  "name": "webpack-pug-starter",
+  "version": "2.0.0",
+  "description": "webpack-pug-starter",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
+    "clear": "del-cli dist",
+    "build": "del-cli dist && webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "autoprefixer": "^9.5.0",
+    "clean-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^5.0.1",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "del-cli": "^1.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-pug-plugin": "^1.0.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.16.4",
+    "pug": "^2.0.3",
+    "pug-html-loader": "^1.1.5",
+    "pug-loader": "^2.4.0",
+    "raw-loader": "^2.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.2.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}

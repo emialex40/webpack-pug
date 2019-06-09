@@ -1,0 +1,25 @@
+include  ../mixines/vars
+include ../mixines/mixines
+
+doctype html
+html(lang='ru-RU')
+   head
+      meta(charset='utf-8')
+      block title
+      meta(name='description', content='')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+      meta(name="format-detection", content="telephone=no")
+      link(rel="shortcut icon", href="favicon/favicon.ico")
+
+
+   body
+      .main-wrapper
+         block content
+
+      link(rel='stylesheet', href='css/style.min.css')
+      script(type="text/javascript" src='js/index.js')
+
+
+
+

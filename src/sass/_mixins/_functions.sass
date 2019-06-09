@@ -1,0 +1,20 @@
+@function vmax($pixels, $full-width)
+  @return #{($pixels/$full-width)* 100}vmax //
+
+@function em($pixels, $base)
+  @return #{$pixels/$base}em
+
+@function rem($pixels, $base)
+  @return #{$pixels/$base}rem
+
+@function pt($pt)
+  @return #{$pt * 96 / 72}px //pt перевести в пиксели
+
+@function pt2px($pt)
+  @return #{$pt / 96 * 72}pt //пиксели перевести в pt
+
+@function proc($pc, $base)
+  $proc: '%'
+  @return #{$pc * 100 / $base + 0.001}$proc
+
+
